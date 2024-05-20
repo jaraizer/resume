@@ -5,88 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jarai Howard - Resume</title>
     <link rel="stylesheet" type="text/css" href="Resume.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <div id="matrix"></div>
     <header>
-        <h1>Jarai Howard</h1>
-      <p>  132 Queen Annes Dr. ●  Burleson, TX  ● 76028 ●  (972)822-3132 </p>
+        <h1 id="header-name">Jarai Howard</h1>
+        <p>Burleson, TX - 76028 - (972) 822-3132</p>
         <p>Jarai@howard.app</p>
+        <button id="theme-toggle">Toggle Theme</button>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#organizations">Organizations</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="education">
+        <section id="education" class="collapsible">
             <h2>Education</h2>
-            <p>Bachelors in Information Technology – December 2015</p>
-            <p>Associates in Network Engineering – May 2013</p>
+            <div class="content">
+                <p>Bachelors in Information Technology – December 2015</p>
+                <i>
+                    <blockquote>
+                        Florida State University
+                    </blockquote>
+                </i>
+                <p>Associates in Network Engineering – May 2013</p>
+                <i>
+                    <blockquote>
+                        Polk State College
+                    </blockquote>
+                </i>
+            </div>
         </section>
 
-        <section id="experience">
-        <h2>Experience</h2>
-        <div class="item">
-            <h3>Microsoft</h3>
-            <p>Support Escalation Engineer - February 2016 - Current</p>
-            <ul>
-                <li>Provided technical support and troubleshooting for complex customer issues.</li>
-                <li>Served as a technical escalation point for both local and global business needs.</li>
-                <li>Contributed to product improvements by identifying and addressing bugs.</li>
-                <li>Led case triage meetings and knowledge-sharing sessions.</li>
-            </ul>
-        </div>
-        <div class="item">
-            <h3>Microsoft, Fluent Group</h3>
-            <p>Intern (Windows UCrew Representative) - May 2012 - May 2014</p>
-            <ul>
-                <li>Conducted marketing campaigns to spread and evangelize brand awareness.</li>
-                <li>Be an on-campus resource for students and faculty to speak with.</li>
-                <li>Promoted events through social media to generate buzz and help sales.</li>
-            </ul>
-        </div>
-        <div class="item">
-            <h3>Cisco Systems</h3>
-            <p>Intern - May 2013 - June 2013</p>
-            <ul>
-                <li>Implemented network to support over 35,000 devices at once at Cisco Live.</li>
-                <li>Solved networking problems for vendors with help of Cisco Network engineers.</li>
-            </ul>
-        </div>
-        <div class="item">
-            <h3>City Of Lakeland</h3>
-            <p>Intern - April 2013 - July 2013</p>
-            <ul>
-                <li>Repaired laptops and desktops associated with city officials.</li>
-                <li>Worked with local staff to upgrade and repair city employees' devices.</li>
-                <li>Handled inbound repair calls and solved software problems remotely</li>
-            </ul>
-        </div>
+        <section id="experience" class="collapsible">
+            <h2>Experience</h2>
+            <div class="content">
+                <div class="timeline">
+                    <div class="item">
+                        <h3>Microsoft</h3>
+                        <p>Support Escalation Engineer - February 2016 - Current</p>
+                        <p>Irving, TX</p>
+                        <ul>
+                            <li>Provided technical support and troubleshooting for complex customer issues.</li>
+                            <li>Served as a technical escalation point for both local and global business needs.</li>
+                            <li>Contributed to product improvements by identifying and addressing bugs.</li>
+                            <li>Led case triage meetings and knowledge-sharing sessions.</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3>Microsoft, Fluent Group</h3>
+                        <p>Intern (Windows UCrew Representative) - May 2012 - May 2014</p>
+                        <p>Tallahassee, FL</p>
+                        <ul>
+                            <li>Conducted marketing campaigns to spread and evangelize brand awareness.</li>
+                            <li>Be an on-campus resource for students and faculty to speak with.</li>
+                            <li>Promoted events through social media to generate buzz and help sales.</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3>Cisco Systems</h3>
+                        <p>Intern - May 2013 - June 2013</p>
+                        <p>Orlando, FL</p>
+                        <ul>
+                            <li>Implemented network to support over 35,000 devices at once at Cisco Live.</li>
+                            <li>Solved networking problems for vendors with help of Cisco Network engineers.</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3>City Of Lakeland</h3>
+                        <p>Intern - April 2013 - July 2013</p>
+                        <ul>
+                            <li>Repaired laptops and desktops associated with city officials.</li>
+                            <li>Worked with local staff to upgrade and repair city employees' devices.</li>
+                            <li>Handled inbound repair calls and solved software problems remotely</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="collapsible">
             <h2>Technical Skills</h2>
-            <ul>
-                <li>MCP Office 365, Teams Support Engineer, Azure AI, SharePoint Online</li>
-                <li>Linux,Windows 9X/NT/2000/XP/2K3/7/8/10/Server 2003/2008/2012 R2</li>
-            </ul>
+            <div class="content">
+                <ul>
+                    <li>MacOS <span class="skill-bar"><span class="skill-level" style="width: 75%;"></span></li>
+                    <li>Linux <span class="skill-bar"><span class="skill-level" style="width: 60%;"></span></li>
+                    <li>Windows XP|7|8|10|11<span class="skill-bar"><span class="skill-level" style="width: 95%;"></span></li>
+                    <li>Azure|M365|SharePoint Online <span class="skill-bar"><span class="skill-level" style="width: 95%;"></span></li>
+                    <li>AWS <span class="skill-bar"><span class="skill-level" style="width: 40%;"></span></li>
+                    <li>PowerShell<span class="skill-bar"><span class="skill-level" style="width: 80%;"></span></li>
+                    <li>C#|Java <span class="skill-bar"><span class="skill-level" style="width: 40%;"></span></li>
+                    <li>HTML|CSS|JS <span class="skill-bar"><span class="skill-level" style="width: 50%;"></span></li>
+                    <li>SQL <span class="skill-bar"><span class="skill-level" style="width: 50%;"></span></li>
+
+                </ul>
+            </div>
         </section>
 
-        <section id="organizations">
+        <section id="organizations" class="collapsible">
             <h2>Organizations</h2>
-            <ul>
-                <li>Phi Beta Lambda</li>
-                <li>Rotaract</li>
-            </ul>
+            <div class="content">
+                <ul>
+                    <li>Phi Beta Lambda</li>
+                    <li>Rotaract</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="achievements">
+        <section id="achievements" class="collapsible">
             <h2>Scholarships and Other Achievements</h2>
-            <ul>
-                <li>High Achieving Minority Award</li>
-                <li>Fancelli Future Leaders Scholarship</li>
-                <li>Florida Academic Scholarship</li>
-                <li>Presidents Award</li>
-                <li>Deans List</li>
-                <li>NSF- S-Stem Scholarship Recipient</li>
-            </ul>
+            <div class="content">
+                <ul>
+                    <li>High Achieving Minority Award</li>
+                    <li>FBL Future Business Leader Scholarship</li>
+                </ul>
+            </div>
         </section>
+
+        <button id="back-to-top">Back to Top</button>
     </main>
 </body>
 </html>
